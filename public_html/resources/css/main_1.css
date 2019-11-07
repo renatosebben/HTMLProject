@@ -1,0 +1,22 @@
+#head {
+    width: auto;
+    overflow:hidden;
+    background:#fff url('../images/Banner_1.jpg') top no-repeat;
+    padding-top: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#headb2 {
+    margin-top: 20px;
+    /*width: auto;*/
+    overflow:hidden;
+    background:#fff url('../images/Banner_2.jpg') top no-repeat;
+    padding-top: 40px;
+    padding-left: 150px;
+    padding-right: 24px;
+}
+
+#bloco{
+    background-color: #0069d9;
+}
