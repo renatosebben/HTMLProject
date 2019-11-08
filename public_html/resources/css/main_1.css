@@ -1,4 +1,4 @@
-#head {
+#headb1 {
     width: auto;
     overflow:hidden;
     background:#fff url('../images/Banner_1.jpg') top no-repeat;
@@ -8,15 +8,39 @@
 }
 
 #headb2 {
+    min-height: 430px;
     margin-top: 20px;
-    /*justify-content: ce*/
-    /*width: auto;*/
     overflow:hidden;
     background:#fff url('../images/Banner_2.jpg') top no-repeat;
+    background-size: 100% auto;
     padding-top: 40px;
     padding-left: 24px;
     padding-right: 24px;
 }
+
+#headb3 {
+    min-height: 430px;
+    margin-top: 20px;
+    overflow:hidden;
+    background:#009999;
+    padding-top: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#headimg {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+#headb4 {
+    overflow:hidden;
+
+    background:#fff url('../images/cartao_virtual.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
 
 #bloco{
     background-color: #0069d9;
