@@ -1,7 +1,16 @@
 #headb1 {
     width: auto;
     overflow:hidden;
-    background:#fff url('../images/Banner_1.jpg') top no-repeat;
+    background:#fff url('../img/images/Banner_1.jpg') top no-repeat;
+    padding-top: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#headplanos {
+    width: auto;
+    overflow:hidden;
+    background:#fff url('../img/images/Banner_planos.jpg') top no-repeat;
     padding-top: 40px;
     padding-left: 24px;
     padding-right: 24px;
@@ -11,7 +20,7 @@
     min-height: 430px;
     margin-top: 20px;
     overflow:hidden;
-    background:#fff url('../images/Banner_2.jpg') top no-repeat;
+    background:#fff url('../img/images/Banner_2.jpg') top no-repeat;
     background-size: 100% auto;
     padding-top: 40px;
     padding-left: 24px;
@@ -36,7 +45,7 @@
 #headb4 {
     overflow:hidden;
 
-    background:#fff url('../images/cartao_virtual.jpg');
+    background:#fff url('../img/images/cartao_virtual.jpg');
     background-repeat: no-repeat;
     background-size: auto;
 }

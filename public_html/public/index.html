@@ -2,57 +2,30 @@
 <html lang="en" dir="ltr">
     <head>
         <link rel="stylesheet" href="../resources/css/main_1.css">
+        <link rel="stylesheet" href="../resources/css/footer-with-button-logo.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>   
+        <script src="../resources/js/footer.js"></script>
         <meta charset="utf-8">
-        <style>
-
-        </style>
         <title></title>
     </head>
     <body id="bloco">
         <div class='container-fluid'>
-
             <div id="headb1">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <button class="btn btn-light btn-lg">CLIENTES</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-light btn-lg">EMPRESA</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-light btn-lg">PLANOS</button>
-                    </li>
-                    <li class="nav-item">
-                        <img src="../resources/images/logo.png" height="100px;"/>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-light btn-lg">PRESTADORES</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-light btn-lg">CORRETORAS</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-light btn-lg">CONTATO</button>
-                    </li>
-                </ul>
 
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <div id="headerpg"></div>
+
+                <!-- CARD-->
+                <div id="searchcred"></div>
+
+            </div>
+
+            <div class="row" style="margin-top: 10px;">
                 <div class="card-columns">
                     <div class="card bg-info text-white">
                         <div class="card-body text-center">
@@ -71,6 +44,7 @@
                     </div>
                 </div>
             </div>
+
 
             <div class="row" style="justify-content: center; margin-top: 20px;">
                 <button class="btn btn-light btn-lg" style="margin-right: 60px;">FAÇA UM PLANO</button>
@@ -95,7 +69,7 @@
                                                 <img src="../resources/img/icons/medicine.png"/>
                                             </td>
                                             <td>
-                                                <p class="card-text"><b><font style="font-size: large;">Acesso a<br> medicamentos</b></font><br>Acesso gratuito a medicamentos para início imediato detratamento prescrito para os casos agudos.</p>
+                                                <p class="card-text"><b><font style="font-size: larger;">Acesso a<br> medicamentos</b></font><br>Acesso gratuito a medicamentos para início imediato detratamento prescrito para os casos agudos.</p>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -170,7 +144,7 @@
                                         <img src="../resources/img/icons/bill.png"/>
                                     </td>
                                     <td>
-                                        <p class="card-text"><b>2° Via de Boletos</b></p>
+                                        <a href="#"><p class="card-text" style="color: white;"><b>2° Via de Boletos</b></p></a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -187,7 +161,7 @@
                                         <img src="../resources/img/icons/medical-history.png"/>
                                     </td>
                                     <td>
-                                        <p class="card-text"><b>Perguntas Frequentes</b></p> 
+                                        <a href="#"><p class="card-text" style="color: white;"><b>Perguntas Frequentes</b></p></a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -203,7 +177,7 @@
                                         <img src="../resources/img/icons/smarthphone.png"/>
                                     </td>
                                     <td>
-                                        <p class="card-text"><b>Consultar Planos Ativos</b></p>
+                                        <a href="#"><p class="card-text" style="color: white;"><b>Consultar Planos Ativos</b></p></a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -221,65 +195,78 @@
                         <div class="card-header text-center text-white">
                             <h4>PLANO AMBULATORIAL</h4>
                         </div>
-                        <img class="card-img-bottom" src="../resources/images/produtos_1.jpg"/>
+                        <img class="card-img-bottom" src="../resources/img/images/produtos_1.jpg"/>
                         <div class="card-footer bg-white">
                             <label>O Plano Ambulatorial compreende todos os
                                 serviços e procedimentos regrados pela lei no
                                 9.656/98 da ANS Agência Nacional de Saúde, em
-                                seu ROL de Procedimentos.</label>
+                                seu ROL de Procedimentos.
+                            </label>
+                            <div style="text-align: center;">
+                                <button class="btn btn-info btn-lg">SAIBA MAIS</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card bg-primary">
                         <div class="card-header text-center text-white">
                             <h4>PLANO HOSPITALAR</h4>
                         </div>
-                        <img class="card-img-bottom" src="../resources/images/produtos_2.jpg"/>
+                        <img class="card-img-bottom" src="../resources/img/images/produtos_2.jpg"/>
                         <div class="card-footer bg-white">
                             <label>O Plano Hospitalar abrange os serviços do
                                 Plano Ambulatorial, adicionando as seguintes
                                 coberturas: Internações hospitalares em
                                 acomodações semi-privativas, procedimentos
                                 cirúrgicos, pediátricos, clínicos e obstétricos.</label>
+                            <div style="text-align: center;">
+                                <button class="btn btn-info btn-lg">SAIBA MAIS</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card bg-primary">
                         <div class="card-header text-center text-white">
                             <h4>PLANO ODONTOLÓGICO</h4>
                         </div>
-                        <img class="card-img-bottom" src="../resources/images/produtos_3.jpg"/>
+                        <img class="card-img-bottom" src="../resources/img/images/produtos_3.jpg"/>
                         <div class="card-footer bg-white">
                             <label>Oferecemos também planos odontológicos com
                                 cobertura aos seguintes serviços: Diagnóstico;
                                 Urgência/Emergência; Radiologia; Prevenção
                                 em Saúde Bucal; Dentística; Periodontia e 
-                                muitos outros</label>
+                                muitos outros
+                            </label>
+                            <div style="text-align: center;">
+                                <button class="btn btn-info btn-lg">SAIBA MAIS</button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
 
             </div>
 
-            <img id="headimg" src="../resources/images/cartao_virtual.jpg"/>
+            <img id="headimg" src="../resources/img/images/cartao_virtual.jpg"/>
+
+
 
             <div class="card-columns" style="margin-top: 10px;">
                 <div class="card bg-info text-white">
                     <div class="card-body text-center">
-                        <p class="card-text"><b>CASSIFICAÇÃO DE PLANOS</b></p>
+                        <a href="#" style="color: #ffffff;"><h4 class="card-text"><b>CLASSIFICAÇÃO DE PLANOS</b></h4></a>
                     </div>
                 </div>
                 <div class="card bg-info text-white">
                     <div class="card-body text-center">
-                        <p class="card-text"><b>COMO UTILIZAR OS PLANOS</b></p>
+                        <a href="#" style="color: #ffffff;"><h4 class="card-text"><b>COMO UTILIZAR OS PLANOS</b></h4></a>
                     </div>
                 </div>
                 <div class="card bg-info text-white">
                     <div class="card-body text-center">
-                        <p class="card-text"><b>ANS - RN 309</b></p>
+                        <a href="#" style="color: #ffffff;"><h4 class="card-text"><b>ANS - RN 309</b></h4></a>
                     </div>
                 </div>
             </div>
+            <div id="footerpg"></div>
         </div>
-    </div>
-
-</body>
+    </body>
 </html>
