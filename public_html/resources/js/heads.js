@@ -27,5 +27,8 @@ $(function () {
     $("#produtos-h").load("heads/produtos-head.html");
 });
 
+$(function () {
+    $("#download-guia-medico-h").load("heads/download-guia-medico-head.html");
+});
 
 
