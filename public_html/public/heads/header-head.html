@@ -30,19 +30,31 @@ and open the template in the editor.
                 <button class="btn btn-light btn-lg">EMPRESA</button>
             </li>
             <li class="nav-item">
-                <button onclick="location.href='planos.html'" class="btn btn-light btn-lg">PLANOS</button>
+                <button onclick="location.href = 'planos.html'" class="btn btn-light btn-lg">PLANOS</button>
             </li>
             <li class="nav-item">
                 <a href="index.html"><img src="../resources/img/logos/logo.png" height="100px;"/></a>
             </li>
             <li class="nav-item">
-                <button class="btn btn-light btn-lg">PRESTADORES</button>
+                <button onclick="location.href = 'contato-prestadores.html'" class="btn btn-light btn-lg">PRESTADORES</button>
             </li>
             <li class="nav-item">
-                <button class="btn btn-light btn-lg">CORRETORAS</button>
+                <button onclick="location.href = 'contato-corretores.html'" class="btn btn-light btn-lg">CORRETORAS</button>
             </li>
             <li class="nav-item">
-                <button class="btn btn-light btn-lg">CONTATO</button>
+                <div class="dropdown">
+                    
+                    <button class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        CONTATO
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="contato-fale-conosco.html">FALE CONOSCO</a>
+                        <a class="dropdown-item" href="contato-ouvidoria.html">OUVIDORIA</a>
+                        <a class="dropdown-item" href="contato-prestadores.html">SEJA UM PRESTADOR</a>
+                        <a class="dropdown-item" href="contato-corretores.html">SEJA UM CORRETOR</a>
+                    </div>
+                </div>
+                
             </li>
         </ul>
     </div>
