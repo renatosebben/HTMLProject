@@ -9,6 +9,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="../resources/css/main_1.css">
         <link rel="stylesheet" href="../resources/css/footer-with-button-logo.css">
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -17,414 +18,115 @@ and open the template in the editor.
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>   
         <script src="../resources/js/heads.js"></script>
         <meta charset="utf-8">
-        <title>Planos</title>
+        <title>Simulador</title>
     </head>
     <body>
         <div class="container-fluid">
 
             <div id="headplanos">
-                <div id="headerpg"></div>
-                <h1 class="display-3" style="color: white; font-family: Montserrat; margin-bottom: 30px;"><b>ENTENDA OS PLANOS</b></h1>
+                <div id="header-h"></div>
+                <h1 class="display-3" style="color: white; font-family: Montserrat; margin-bottom: 30px; margin-left: 45px;"><b>SIMULE</b></h1>
+            </div>
+            <div id="planos-h"></div>
+
+            <!--SIMULADOR-->
+            <div class="card">
+                <div class="card card-body text-center">
+                    <h1>SIMULADOR</h1>
+                    <h5>Preencha corretamente o simulador e descubra como é fácil ter LifeDay Saúde em sua empresa.</h5>
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <select class="form-control" id="estado">
+                                <option>Escolha um Estado</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-control" id="cidade">
+                                <option>Escolha uma Cidade</option>
+                            </select>   
+                        </div>
+                    </div>
+                </div>   
             </div>
 
-            <!-- BOX 1 -->
-            <div class="row" style="background-color: #ffffff;">
-                <div class="col-sm-7">
-                    <h2 style="color: #000099">TIPOS</h2>
-                    <h5>Queremos que você conheça como funciona a estrutura dos planos LifeDay 
-                        Saúde para que você possa escolher o tipo que mais se adequa para sua 
-                        empresa, seja ela MEI, média ou grande empresa. Conheça as opções de planos
-                        que oferecemos.</h5>
-
-                    <div class="card-columns d-flex">
-                        <div class="card bg-info text-white">
-                            <div class="card h-100 card-body text-center" style="background-color: #009999;">
-                                <img src="../resources/img/icons/factory.png"/>
-                                <h4 style="color: #000099;">PLANO</h4>
-                                <h3 style="color: #ffffff;">COLETIVO EMPRESARIAL</h3>
-                                <h6>Planos contratos por empresas de forma direta.</h6>
-
-                            </div>
+            <!--PLANOS-->
+            <div class="row">
+                <div class="card-columns d-flex">
+                    <div class="card">
+                        <div class="card card-header bg-info text-center" style="height: 220px;">
+                            <h3>COLETIVO EMPRESARIAL</h3>
+                            <h5 style="color: #ffffff;">Projetado para empresas de todos os tamanhos.</h5>
                         </div>
-                        <div class="card bg-info text-white" style="background-color: #009999;">
-                            <div class="card h-100 card-body text-center" style="background-color: #009999;">
-                                <img src="../resources/img/icons/employees.png"/>
-                                <h4 style="color: #000099;">PLANO</h4>
-                                <h4 style="color: #ffffff;">COLETIVO POR ADESÃO</h4>
-                                <h6>Planos adquiridos através de
-                                    associações e sindicatos.</h6>
-
-                            </div>
+                        <div class="card card-body text-center">
+                            <button class="btn btn-info btn-lg">SELECIONE</button>
+                        </div>   
+                    </div>
+                    <div class="card">
+                        <div class="card card-header bg-info text-center" style="height: 220px;">
+                            <h3>COLETIVO PO ADESÃO</h3>
+                            <h5 style="color: #ffffff;">Modelado para sindicatos, associações e grupos empresariais.</h5>
                         </div>
-                        <div class="card bg-info text-white" style="background-color: #009999;">
-                            <div class="card h-100 card-body text-center" style="background-color: #009999;">
-                                <img src="../resources/img/icons/family.png"/>
-                                <h4 style="color: #000099;">PLANO</h4>
-                                <h4 style="color: #ffffff;">INDIVIDUAL FAMILIAR</h4>
-                                <h6>Este plano não está
-                                    sendo comercializado</h6>
+                        <div class="card card-body text-center">
+                            <button class="btn btn-info btn-lg">SELECIONE</button>
+                        </div>   
+                    </div>
+                    <div class="card">
+                        <div class="card card-header bg-info text-center" style="height: 220px;">
+                            <h3>INDIVIDUAL FAMILIAR</h3>
+                            <h5 style="color: #ffffff;">Não estamos operando planos individuais e familiares.</h5>
+                        </div>
+                        <div class="card card-body text-center">
+                            <button class="btn btn-info btn-lg">SELECIONE</button>
+                        </div>   
+                    </div>
+                </div>
+            </div>
 
-                            </div>
+
+            <!--SEUS DADOS-->
+            <div class="card">
+                <div class="card card-header">
+                    <h2 style="color: #000099">Seus Dados</h2>
+                    <h6>Para que possamos montar uma cotação precisa e customizada precisamos conhecer um pouco da sua empresa.</h6>
+                </div>
+                <div class="card card-body">
+                    <div class="form-group">
+                        <div class="form-group col-md-12">
+                            <input class="form-control" type="text" id="nome" name="nome" placeholder="Nome completo"/> 
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input class="form-control" type="text" id="nome" name="nome" placeholder="CNPJ"/>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input class="form-control" type="text" id="nome" name="nome" placeholder="Contato"/>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input class="form-control" type="text" id="nome" name="nome" placeholder="Telefone"/>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input class="form-control" type="text" id="nome" name="nome" placeholder="Email"/>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input class="form-control" type="text" id="nome" name="nome" placeholder="Quantidade de vidas"/>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control" type="text" id="nome" name="nome" placeholder="Observações"></textarea>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <button class="btn btn-info">ENVIAR</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div id="search-h"></div>
-                </div>
             </div>
 
-            <!-- BOX 2 -->
-            <div class="row" style="background-color: #cccccc;">
-                <div class="col-sm-8">
-                    <table border="0">
-                        <tbody>
-                            <tr>
-                                <td><h2 style="color: #000099">ATUAÇÃO</h2>
-                                    <h5>Além de diversos  Hospitais e  Prontos-socorros
-                                        credenciados  para a realização  de atendimentos
-                                        em Urgência e Emergência a LifeDay Saúde
-                                        disponibiliza aos seus beneficiários a possibilidade
-                                        de acesso a serviços de saúde em todo o Brasil pelo
-                                        “Sistema Abramge Nacional”.</h5></td>
-                                <td><img src="../resources/img/images/mapa.png"/></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="card-columns d-flex">
-                        <div class="card bg-info text-white">
-                            <div class="card h-100 card-body text-center" style="background-color: #009999;">
-                                <img src="../resources/img/icons/factory.png"/>
-                                <h4 style="color: #000099;">PLANO</h4>
-                                <h3 style="color: #ffffff;">COLETIVO EMPRESARIAL</h3>
-                                <h6>Planos contratos por empresas de forma direta.</h6>
-                            </div>
-                        </div>
-                        <div class="card bg-info text-white">
-                            <div class="card h-100 card-body text-center" style="background-color: #009999;">
-                                <img src="../resources/img/icons/employees.png"/>
-                                <h4 style="color: #000099;">PLANO</h4>
-                                <h4 style="color: #ffffff;">COLETIVO POR ADESÃO</h4>
-                                <h6>Planos adquiridos através de
-                                    associações e sindicatos.</h6>
-                            </div>
-                        </div>
-                        <div class="card bg-info text-white">
-                            <div class="card h-100 card-body text-center" style="background-color: #009999;">
-                                <img src="../resources/img/icons/family.png"/>
-                                <h4 style="color: #000099;">PLANO</h4>
-                                <h4 style="color: #ffffff;">INDIVIDUAL FAMILIAR</h4>
-                                <h6>Este plano não está
-                                    sendo comercializado</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!--TABELA FAIXA ETARIA-->
+            <div class="card">
+                <div class="card card-body">
 
-                <div class="col-sm-4">
-                    <div class="card" style="background-color: #009999;  margin-top: 35px;">
-                        <div class="card-body text-white">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <img src="../resources/img/icons/medical-history_1.png"/>
-                                </div>
-                                <div class="col">
-                                    <br>
-                                    <h4><a href="#" style="color: white;"><b>Conheça nossa 
-                                                Lista de Representantes</b></a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="background-color: #000099; margin-top: 15px;">
-                        <div class="card-body text-white">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <img src="../resources/img/icons/folder.png"/>
-                                </div>
-                                <div class="col">
-                                    <br>
-                                    <br>
-                                    <h4><a href="#" style="color: white;"><b>Download
-                                                Guia Médico</b></a></h4>
-                                </div>
-                            </div>    
-                        </div>
-                    </div>
-                    <div class="card" style="background-color: #009999; margin-top: 15px;">
-                        <div class="card-body text-white">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <img src="../resources/img/icons/medical_report.png"/>
-                                </div>
-                                <div class="col">
-                                    <br>
-                                    <h4><a href="#" style="color: white;"><b>Conheça o ROL de 
-                                            Procedimentos da 
-                                            ANS</b></a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                </div>   
             </div>
 
-            <!-- BOX 3 -->
-            <div class="row" style="background-color: #cccccc;">
-                <div class="col-sm-8">
-                    <table border="0">
-                        <tbody>
-                            <tr>
-                                <td><h2 style="color: #000099">TIPOS DE CONTRATAÇÃO</h2>
-                                    <h5>Conheças os tipos de atentimento e segmentação que podem ser contratados</h5></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div class="card-columns d-flex">
-                        <div class="card bg-info text-white">
-                            <div class="card h-100 card-body text-center " style="background-color: #009999;">
-                                <img src="../resources/img/icons/plaster.png"/>
-                                <h4 style="color: #000099;">AMBULATORIAL</h4>
-                                <h6>Só para consultas,
-                                    exames e terapias</h6>
-
-                            </div>
-                        </div>
-                        <div class="card bg-info text-white">
-                            <div class="card h-100 card-body text-center" style="background-color: #009999;">
-                                <img src="../resources/img/icons/hospital.png"/>
-                                <h4 style="color: #000099;">HOSPITALAR SEM OBSTETRÍCIA</h4>
-                                <h6>Só para internação
-                                    sem cobertura para parto</h6>
-
-                            </div>
-                        </div>
-                        <div class="card bg-info text-white">
-                            <div class="card h-100 card-body text-center" style="background-color: #009999;">
-                                <img src="../resources/img/icons/midwife.png"/>
-                                <h4 style="color: #000099;">HOSPITALAR
-                                    COM OBSTETRÍCIA</h4>
-                                <h6>Só para internação com
-                                    cobertura para parto</h6>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-columns d-flex">
-                        <div class="card bg-info text-white">
-                            <div class="card h-100 card-body text-center"  style="background-color: #009999;">
-                                <img src="../resources/img/icons/stethoscope.png"/>
-                                <h4 style="color: #000099;">AMBULATORIAL +
-                                    HOSPITALAR SEM
-                                    OBSTETRÍCIA</h4>
-                                <h6>Para consultas,
-                                    exames, terapias
-                                    e internação</h6>
-
-                            </div>
-                        </div>
-                        <div class="card bg-info text-white">
-                            <div class="card h-100 card-body text-center" style="background-color: #009999;">
-                                <img src="../resources/img/icons/hospital2.png"/>
-                                <h4 style="color: #000099;">AMBULATORIAL +
-                                    HOSPITALAR
-                                    COM OBSTETRÍCIA</h4>
-                                <h6>Para consultas, exames,
-                                    terapias, internação e parto</h6>
-
-                            </div>
-                        </div>
-                        <div class="card bg-info text-white">
-                            <div class="card h-100 card-body text-center"  style="background-color: #009999;">
-                                <img src="../resources/img/icons/dental-care.png"/>
-                                <h4 style="color: #000099;">ODONTOLÓGICO</h4>
-                                <h6>Só para consultas e
-                                    exames odontológicos</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div id="search-h"></div>
-                </div>
-
-            </div>
-
-            <!-- BOX 4 -->
-            <div class="row" style="background-color: #ffffff;">
-                <div class="col-sm-8">
-                    <h2 style="color: #000099">PADRÕES DE CARÊNCIAS</h2>
-                    <table class="table">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Coberturas</th>
-                                <th>Prazo máximo de carência</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="table-active">
-                                <td>Urgências e Emergências</td>
-                                <td>24 Horas</td>
-                            </tr>
-                            <tr>
-                                <td>Demais Coberturas</td>
-                                <td>180 Dias</td>
-                            </tr>
-                            <tr class="table-active">
-                                <td>Partos e Termos</td>
-                                <td>300 Dias</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>    
-                </div>
-            </div>
-            <!-- BOX 5 -->
-            <div class="row" style="background-color: #ffffff;">
-                <div class="col-sm-8">
-                    <h2 style="color: #000099">PARA CONTRATAR</h2>
-                    <h5>Você e sua empresa podem contratar os planos LifeDay Saúde através de representantes
-                        autorizados, corretores e também através de associações profissionais
-                        e sindicatos</h5>
-                </div>
-            </div>
-            <!-- BOX 6 -->
-            <div class="row" style="background-color: #ffffff;">
-                <div class="col-sm-12">
-                    <div class="card-columns d-flex">
-                        <div class="card bg-info text-white">
-                            <div class="card h-100 card-body text-center " style="background-color: #009999;">
-                                <img src="../resources/img/icons/employees.png"/>
-                                <h4 style="color: #ffffff;">Coletivo por Adesão</h4>
-                                <div class="card-footer text-left">
-
-                                    <h4 style="color: #000066;">Adesão</h4>
-                                    <h6>Exige vínculo com associação profissional ou sindicato.</h6>
-
-                                    <h4 style="color: #000066;">Carência</h4>
-                                    <h6>Sim. Salvo para que ingressa no plano
-                                        em até 30 dias da celebração do contrato ou no aniversário do mesmo.</h6>
-
-                                    <h4 style="color: #000066;">Cobertura</h4>
-                                    <h6>Conforme CONTRATO e ROL DE PROCEDIMENTOS.</h6>
-
-                                    <h4 style="color: #000066;">Cobrança</h4>
-                                    <h6>DIRETAMENTE ao beneficiário pela 
-                                        Pessoa Jurídica contratante ou pela 
-                                        Administradora de Benefícios.</h6>
-
-                                    <h4 style="color: #000066;">Rescisão</h4>
-                                    <h6>PREVISÃO EM CONTRATO e somente
-                                        válida para o contrato como um todo.</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card bg-info text-white">
-                            <div class="card h-100 card-body text-center" style="background-color: #009999;">
-                                <img src="../resources/img/icons/factory.png"/>
-                                <h4 style="color: #ffffff;">Coletivo Empresarial</h4>
-                                <div class="card-footer text-left">
-
-                                    <h4 style="color: #000066;">Adesão</h4>
-                                    <h6>Exige vínculo com com pessoa jurídica
-                                        por relação empregatícia ou estatuária.</h6>
-
-                                    <h4 style="color: #000066;">Carência</h4>
-                                    <h6>Sim. Salvo para contrato com 30 ou 
-                                        mais beneficiários e para quem ingressa
-                                        no plano em até 30 dias da celebração
-                                        do contrato ou da vinculação à empresa .</h6>
-
-                                    <h4 style="color: #000066;">Cobertura</h4>
-                                    <h6>Conforme CONTRATO e ROL DE PROCEDIMENTOS.</h6>
-
-                                    <h4 style="color: #000066;">Cobrança</h4>
-                                    <h6>DIRETAMENTE ao beneficiário pela
-                                        Pessoa Jurídica contratante ou pela
-                                        Administradora de Benefícios</h6>
-
-                                    <h4 style="color: #000066;">Rescisão</h4>
-                                    <h6>PREVISÃO EM CONTRATO e somente
-                                        válida para o contrato como um todo.</h6>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="card bg-info text-white">
-                            <div class="card h-100 card-body text-center" style="background-color: #009999;">
-                                <img src="../resources/img/icons/family.png"/>
-                                <h4 style="color: #ffffff;">Coletivo por Adesão</h4>
-                                <div class="card-footer text-left">
-
-                                    <h4 style="color: #000066;">Adesão</h4>
-                                    <h6>Exige vínculo com a pessoa física.</h6>
-
-                                    <h4 style="color: #000066;">Carência</h4>
-                                    <h6>Sim. Salvo para que ingressa no plano
-                                        em até 30 dias da celebração do contrato ou no aniversário do mesmo.
-                                    </h6>
-
-                                    <h4 style="color: #000066;">Cobertura</h4>
-                                    <h6>Conforme CONTRATO e ROL DE PROCEDIMENTOS.</h6>
-
-                                    <h4 style="color: #000066;">Cobrança</h4>
-                                    <h6>DIRETAMENTE ao beneficiário pela 
-                                        Pessoa Jurídica contratante ou pela 
-                                        Administradora de Benefícios.</h6>
-
-                                    <h4 style="color: #000066;">Rescisão</h4>
-                                    <h6>PREVISÃO EM CONTRATO e somente
-                                        válida para o contrato como um todo.</h6>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- BOX 7 -->
-            <div class="row" style="background-image: url(../resources/img/images/area_chamadas.jpg)">
-                <div class="col-sm-12 text-center">
-                    <h1>Planos empresariais<br> a partir de</h1>
-                    <h1><b>02 VIDAS</b></h1>
-                </div>
-            </div>
-
-            <!-- BOX 8 -->
-            <div class="row" style="background-color: #ffffff; margin-top: 50px; margin-bottom: 50px;">
-                <div class="col-sm-12 text-left">
-                    <h1 style="color: #000099"><b>PERGUNTAS FREQUENTES</b></h1>
-                    <h4><b>1. Como faço um orçamento?</b></h4>
-                    <h6><b>Para solicitar uma cotação você pode enviar email para nosso comercial, pelo comercial@lifedaysaude.com.br ou acesse nossa 
-                            página de simulações e envie seu pedido.</b></h6>
-
-                    <h4><b>2. Como faço para pagar o meu boleto?</b></h4>
-                    <h6><b>Você pode acessar o seu boleto de pagamento entrando na área restrita para clientes ou também acessando nosso APP.</b></h6>
-
-                    <h4><b>3. Vocês vão cadastrar novos credenciados para Recife?</b></h4>
-                    <h6><b>Nossa equipe está sempre procurando e cadastrando novos Credenciados para sua região. Para pesquisar credenciados 
-                            acesse o formulário de busca nessa página ou na home do site.</b></h6>
-
-                    <h4><b>4. Como me tornar corretor/representante?</b></h4>
-                    <h6><b>Envie seus dados para nosso email comercial@lifedaysaude.com.br e aguarde o contato da nossa equipe comercial.</b></h6>
-
-                    <h4><b>5. Quanto tempo de carência para fazer parto?</b></h4>
-                    <h6><b>Cada empresa / associação pode personalizar o plano LifeDay Saúde e adequar carências, em contrato, de acordo com suas
-                            necessidades. Então, acesse a área restrita, consulte seu contrato e verifique o período de carência.</b></h6>
-                </div>
-            </div>
-
-
-
-            <div id="cotacao"></div>
-            <div id="footerpg"></div>
+            <div id="footer-h"></div>
         </div>
     </body>
 </html>

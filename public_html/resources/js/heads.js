@@ -1,3 +1,6 @@
+$(function () {
+    $("#css-scripts").load("css_scripts/css-scripts.html");
+});
 
 $(function () {
     $("#header-h").load("heads/header-head.html");
@@ -30,5 +33,7 @@ $(function () {
 $(function () {
     $("#download-guia-medico-h").load("heads/download-guia-medico-head.html");
 });
+
+
 
 
