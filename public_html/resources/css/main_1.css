@@ -29,7 +29,6 @@
     overflow:hidden;
     background:#fff url('../img/images/Banner_planos.jpg') top no-repeat;
     background-size: cover;
-    padding-top: 40px;
     padding-left: 24px;
     padding-right: 24px;
 }
@@ -46,7 +45,6 @@
 
 #headb2 {
     min-height: 430px;
-    margin-top: 20px;
     overflow:hidden;
     background:#fff url('../img/images/Banner_2.jpg') top no-repeat;
     background-size: 100% auto;
@@ -57,7 +55,6 @@
 
 #headb3 {
     min-height: 430px;
-    margin-top: 20px;
     overflow:hidden;
     background:#009999;
     padding-top: 40px;

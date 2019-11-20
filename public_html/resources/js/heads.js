@@ -27,6 +27,10 @@ $(function () {
 });
 
 $(function () {
+    $("#planos2-h").load("heads/planos2-head.html");
+});
+
+$(function () {
     $("#produtos-h").load("heads/produtos-head.html");
 });
 
