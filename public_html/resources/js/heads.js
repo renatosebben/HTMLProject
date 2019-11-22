@@ -27,6 +27,10 @@ $(function () {
 });
 
 $(function () {
+    $("#planos-como-h").load("heads/planos-como-head.html");
+});
+
+$(function () {
     $("#planos2-h").load("heads/planos2-head.html");
 });
 
