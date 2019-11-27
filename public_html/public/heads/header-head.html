@@ -27,37 +27,66 @@ and open the template in the editor.
         </button>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <button class="btn btn-light btn-lg form-control">CLIENTES</button>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn btn-light btn-lg dropdown-toggle form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <bts>CLIENTES</bts>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="http://cliente.lifedaysaude.com.br/cliente/" target="_blank">Portal do Cliente</a>
+                            <a class="dropdown-item" href="http://cliente.lifedaysaude.com.br/cliente/#!/localizar" target="_blank">Rede Credenciada</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
-                    <button class="btn btn-light btn-lg form-control">EMPRESA</button>
+                    <div class="dropdown">
+                        <button class="btn btn-light btn-lg dropdown-toggle form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <bts>EMPRESA</bts>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="http://lifedaysaude.com.br/cliente/" target="_blank">Portal do Cliente</a>
+                            <a class="dropdown-item" href="http://lifedaysaude.com.br/cliente/#!localizar" target="_blank">Rede Credenciada</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
-                    <button onclick="location.href = 'planos.html'" class="btn btn-light btn-lg form-control">PLANOS</button>
+                    <button onclick="location.href = 'planos.html'" class="btn btn-light btn-lg form-control"><bts>PLANOS</bts></button>
                 </li>
                 <li class="nav-item">
                     <a href="index.html"><img src="../resources/img/logos/logo.png" height="100px;"/></a>
                 </li>
                 <li class="nav-item">
-                    <button onclick="location.href = 'contato-prestadores.html'" class="btn btn-light btn-lg form-control">PRESTADORES</button>
-                </li>
-                <li class="nav-item">
-                    <button onclick="location.href = 'contato-corretores.html'" class="btn btn-light btn-lg form-control">CORRETORAS</button>
+                    <div class="dropdown">
+                        <button class="btn btn-light btn-lg dropdown-toggle form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <bts>PRESTADOR</bts>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="http://lifedaysaude.com.br/credenciado" target="_blank">Portal do Prestador</a>
+                            <a class="dropdown-item" href="contato-prestadores.html" target="_blank">Seja um Prestador</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
                         <button class="btn btn-light btn-lg dropdown-toggle form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            CONTATO
+                            <bts>CORRETORAS</bts>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="http://corretora.lifedaysaude.com.br/corretora/" target="_blank">Portal do Corretor</a>
+                            <a class="dropdown-item" href="contato-corretores.html" target="_blank">Seja um Corretor</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn btn-light btn-lg dropdown-toggle form-control" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <bts>CONTATO</bts>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="contato-fale-conosco.html">FALE CONOSCO</a>
                             <a class="dropdown-item" href="contato-ouvidoria.html">OUVIDORIA</a>
-                            <a class="dropdown-item" href="contato-prestadores.html">SEJA UM PRESTADOR</a>
-                            <a class="dropdown-item" href="contato-corretores.html">SEJA UM CORRETOR</a>
                         </div>
                     </div>
-
                 </li>
             </ul>
         </div>
